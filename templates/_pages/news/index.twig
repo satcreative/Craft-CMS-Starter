@@ -1,0 +1,22 @@
+{% import '_macros/_components' as components %}
+
+{% extends '_pages/news/layout' %}
+
+{% block content %}
+
+	{{ components.component_builder({
+		entry: entry
+	}) }}
+	
+	<div class="textBlock">
+		<div class="textBlock__content">
+			{% set articleList = craft.entries().section('newsArticles') %}
+			{% if articleList | length %}
+				{% for article in articleList.all() %}
+			        <a href="{{ article.url }}">{{ article.title }}</a>
+			    {% endfor %}
+			{% endif %}
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% import '_macros/_components' as components %}
+{# _components/component-builder.twig #}
+
+{# Parameters #}
+
+{% set entry = params.entry ?? null %}
+
+{# Output #}
+{% if entry and entry.componentBuilder | length %}
+
+		{% for block in entry.componentBuilder.all() %}
+			{% do block.useMemoized(entry.componentBuilder) %}
+		{% endfor %}
+		{% for block in entry.componentBuilder.all() %}
+		    {% switch block.type.handle %}
+		    
+				{% case 'textBlock' %}
+					{{ components.text_block({
+						text: block.textEditor,
+						align: block.align,
+					}) }}
+				{% case 'imageBlock' %}
+					{{ components.image_block({
+						image: block.image,
+						caption: block.caption,
+					}) }}
+		
+			{% endswitch %}
+		{% endfor %}
+
+{% endif %}

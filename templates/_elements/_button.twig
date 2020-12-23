@@ -1,0 +1,13 @@
+{# _elements/_button.twig #}
+
+{# Parameters #}
+{% set text = params.text ?? null %}
+{% set link = params.link ?? null %}
+{% set target = params.target ?? null %}
+{% set class = params.class ?? null %}
+
+{# Output #}
+<a class="button {% if class %} {{ class }} {% endif %}"
+	href="{{ link }}" target="{{ target }}">
+	{{ text }}
+</a>

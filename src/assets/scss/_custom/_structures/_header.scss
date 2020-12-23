@@ -1,0 +1,32 @@
+/** // structures/header.scss - start */
+.header {
+	padding: 0 20px;
+	background: $colour-blue;
+	position: sticky;
+	&__content {
+		@extend .restrict;
+		@extend .flexCenter;
+	}
+	&__col {
+		
+	}
+	&__nav {
+		flex: 1;
+	}
+	&__logo {
+		display: block;
+		width: 120px;
+		margin: 20px 20px 20px 0;
+	}
+	@include bp(med) {
+		&__logo {
+			width: 150px;
+		}
+	}
+	@include bp(lrg) {
+		&__logo {
+			width: 180px;
+			margin: 20px 20px 20px 0;
+		}
+	}
+}

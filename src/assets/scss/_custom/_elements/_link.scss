@@ -1,0 +1,10 @@
+/** // - link.scss - start - // */
+.link {
+	font-weight: $weight-bold;
+	color: $colour-blue;
+	text-decoration: none;
+ 	&:hover {
+	 	text-decoration: underline;
+ 	}
+}
+/** // - link.scss - end - // */

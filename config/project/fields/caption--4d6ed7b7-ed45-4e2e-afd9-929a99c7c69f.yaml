@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: a16eb297-2f98-46c2-a5af-e3cc90676b7b
+handle: caption
+instructions: ''
+name: Caption
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

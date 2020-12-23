@@ -1,0 +1,17 @@
+{% import '_macros/_components' as components %}
+
+{% extends '_layouts/_layout-default' %}
+
+{% block main %}
+	
+	<div class="topBanner">
+		<div class="topBanner__content">
+			<h1>Homepage</h1>
+		</div>
+	</div>
+	
+	{{ components.component_builder({
+		entry: entry
+	}) }}
+		
+{% endblock %}

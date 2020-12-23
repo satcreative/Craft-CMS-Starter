@@ -1,0 +1,19 @@
+{# _components/_image-block.twig #}
+
+{# Parameters #}
+{% set image = params.image.one() ?? null %}
+{% set caption = params.caption ?? null %}
+
+{# Output #}
+{% if image %}
+<section class="imageBlock">
+	<div class="imageBlock__content">
+		<img class="lazyload"
+			src="{{ image.url }}"
+			alt="{{ image.title }}">
+		{% if caption %}
+			<p class="imageBlock__caption">{{ caption }}</p>
+		{% endif %}
+	</div>
+</section>
+{% endif %}

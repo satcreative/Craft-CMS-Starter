@@ -1,0 +1,17 @@
+{% import '_macros/_components' as components %}
+
+{% extends '_pages/news/layout' %}
+
+{% block content %}
+	
+	<div class="textBlock">
+		<div class="textBlock__content">
+			<h2>{{ entry.title }}</h2>
+		</div>
+	</div>
+	
+	{{ components.component_builder({
+		entry: entry
+	}) }}
+
+{% endblock %}

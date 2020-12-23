@@ -1,0 +1,20 @@
+/** // structures/socialLinks.scss - start */
+.socialLinks {
+	font-size: 3rem;
+	ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		color: $body-copy;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	@include bp(med) {
+
+	}
+}

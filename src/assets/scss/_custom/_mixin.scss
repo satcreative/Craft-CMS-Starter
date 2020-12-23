@@ -1,0 +1,37 @@
+/** //// mixin.scss - start */
+
+@mixin bp($name) {
+  @if $name == sml {
+    @media (min-width: $smlBP) { @content; }
+  }
+  @else if $name == med {
+    @media (min-width: $medBP) { @content; }
+  }
+  @else if $name == lrg {
+    @media (min-width: $lrgBP)  { @content; }
+  }
+  @else if $name == xlrg {
+    @media (min-width: $xlrgBP)  { @content; }
+  }
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin clearfixStop() {
+    &:before,
+    &:after {
+        content: normal;
+        display: block;
+    }
+    &:after {
+        clear: none;
+    }
+}

@@ -1,0 +1,17 @@
+{% import '_macros/_structures' as structures %}
+
+{{ structures.head() }}
+
+{{ structures.header() }}
+
+<main class="main">
+	<div class="main__content">
+
+		{% block main %}{% endblock %}
+	
+	</div>
+</main>
+
+{{ structures.footer() }}
+	
+{{ structures.foot() }}

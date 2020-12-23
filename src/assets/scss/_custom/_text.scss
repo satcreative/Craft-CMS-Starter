@@ -1,0 +1,73 @@
+@import '_fonts';
+@import '_mixin';
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+	margin: 0;
+	color: inherit;
+}
+h1, h2, h3, h4 {
+	line-height: 140%;
+	font-weight: $weight-bold;
+}
+h5, h6, p, .p, a, li {
+	line-height: 170%;
+	font-weight: $weight-regular;
+}
+.h1 {
+	font-size: 4rem;
+}
+.h2 {
+	font-size: 3rem;
+}
+.h3 {
+	font-size: 2.5rem;
+}
+.h4 {
+	font-size: 2.3rem;
+}
+.h5 {
+	font-size: 2rem;
+}
+.h6 {
+	font-size: 1.8rem;
+}
+.p {
+	font-size: 1.7rem;
+}
+.sm {
+	font-size: 1.4rem;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@include bp(med) {
+	.h1 {
+		font-size: 5rem;
+	}
+	.h2 {
+		font-size: 3.5rem;
+	}
+	.h3 {
+		font-size: 3rem;
+	}
+	.h4 {
+		font-size: 2.5rem;
+	}
+	.h5 {
+		font-size: 2.2rem;
+	}
+	.h6 {
+		font-size: 2rem;
+	}
+	.p {
+		font-size: 1.8rem;
+	}
+	.sm {
+		font-size: 1.6rem;
+	}	
+}

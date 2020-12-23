@@ -1,0 +1,14 @@
+/** // - componentMargin.scss - start - // */
+.componentMargin {
+	margin: $indent-vertical-mob $indent-horizontal-mob;
+	&--extra {
+		margin: $indent-vertical-extra-mob $indent-horizontal-extra-mob;
+	}
+	@include bp(med) {
+		margin: $indent-vertical-med $indent-horizontal-med;
+		&--extra {
+			margin: $indent-vertical-extra-med $indent-horizontal-extra-med;
+		}
+	}
+}
+/** // - componentMargin.scss - end - // */

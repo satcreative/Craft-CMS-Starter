@@ -1,0 +1,109 @@
+/** // - text.scss - start - // */
+.textContent {
+	@extend .p;
+	& > * {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	h1, h2, h3 {
+		margin-bottom: 15px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	h1 {
+		@extend .h1;
+	}
+	h2 {
+		@extend .h2;
+	}
+	h3 {
+		@extend .h3;
+	}
+	h4 {
+		@extend .h4;
+	}
+	h5 {
+		@extend .h5;
+	}
+	h6 {
+		@extend .h6;
+	}
+	ul, ol {
+		margin-left: 15px;
+		ul, ol {
+			margin-bottom: 5px;
+		}
+		li {
+			margin-bottom: 5px;
+		}
+	}
+	ul {
+		list-style: disc;
+	}
+	ol {
+		counter-reset: item;
+		& > li {
+		    counter-increment: item;
+		}
+		& ol > li {
+		    display: block;
+		    &:before {
+			    content: counters(item, ".") ". ";
+			    margin-left: -20px;
+			}
+		}
+	}
+	a {
+		@extend .link;
+	}
+	mark {
+		background: $colour-grey;
+		padding: 5px;
+	}
+	blockquote {
+		font-style: italic;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	figure {
+		display: inline-block;
+		width: 100%;
+		img {
+			display: block;
+			max-width: 100%;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&[style="text-align:center;"] {
+			text-align: center;
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+	figcaption {
+		margin-top: 10px;
+		opacity: 0.5;
+		font-style: italic;
+	}
+	@include bp(med) {
+		& > * {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		h1, h2, h3 {
+			margin-bottom: 20px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
+/** // - text.scss - end - // */

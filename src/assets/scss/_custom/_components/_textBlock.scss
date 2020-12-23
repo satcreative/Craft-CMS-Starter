@@ -1,0 +1,15 @@
+/** ///////////// - textBlock.scss - start - ///////////// */
+.textBlock {
+	@extend .componentMargin;
+	&__content {
+		@extend .restrict;
+		@extend .textContent;
+		&--center {
+			text-align: center;
+		}
+	}
+	@include bp(med) {
+
+	}
+}
+/** ///////////// - textBlock.scss - end - ///////////// */

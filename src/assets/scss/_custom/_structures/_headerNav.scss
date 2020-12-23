@@ -1,0 +1,103 @@
+/** // structures/headerNav.scss - start */
+.headerNav {
+	font-size: 1.6rem;
+	&.open {
+		.headerNav__list {
+			display: block;
+		}
+	}
+	ul {
+		list-style: none;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__icon {
+		color: white;
+		font-size: 3rem;
+		margin-left: 10px;
+	}
+	&__list {
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: $colour-blue-light;
+		display: none;
+		li {
+			a {
+				display: block;
+				text-decoration: none;
+				font-weight: $weight-bold;
+			}
+		}
+		ul {
+			position: absolute;
+			display: none;
+			background: #eee;
+			top: 100%;
+		}
+	}
+	&__root {
+		& > a {
+			margin: 20px;
+			color: white;
+			&:hover {
+				color: $colour-orange;
+			}
+		}
+		ul {
+			li {
+				& > a {
+					margin: 20px;
+					&:hover {
+						color: $colour-orange;
+					}
+				}
+			}
+		}
+	}
+	@include bp(med) {
+		font-size: 1.8rem;
+	}
+	@include bp(lrg) {
+		&.open {
+			.headerNav__list {
+				display: flex;
+			}
+		}
+		&__icon {
+			display: none;
+		}
+		&__list {
+			width: auto;
+			position: static;
+			background: none;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: flex-end;
+			margin: 0 10px 0 0;
+			li {
+				margin: 0;
+				&:hover {
+					ul {
+						display: block;
+					}
+				}
+			}
+		}
+		&__root {
+			& > a {
+				margin: 0;
+				padding: 30px 10px;
+			}
+		}
+	}
+	@include bp(xlrg) {
+		font-size: 1.6rem;
+	}
+}

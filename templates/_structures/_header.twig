@@ -1,0 +1,12 @@
+{% import '_macros/_structures' as structures %}
+
+<header class="header">
+	<div class="header__content">
+		<a class="header__logo" href="/">
+			<img src="{{ url('dist/assets/logos/logo.svg') }}" alt="Logo"/>
+		</a>
+		<div class="header__nav">
+			{{ structures.headerNav() }}
+		</div>
+	</div>
+</header>

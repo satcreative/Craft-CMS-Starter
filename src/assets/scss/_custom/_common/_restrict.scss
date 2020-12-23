@@ -1,0 +1,9 @@
+/** // common/restrict.scss - start */
+.restrict {
+	margin: 0 auto;
+	max-width: 1200px;
+	&--extra {
+		margin: 0 auto;
+		max-width: 950px;
+	}
+}

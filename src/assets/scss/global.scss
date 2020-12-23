@@ -1,0 +1,54 @@
+/** ///////////// - global.scss - start - ///////////// */
+
+@import '_dependencies/_normalize';
+@import '_dependencies/_slick';
+
+@import '_custom/_fonts';
+@import '_custom/_variable';
+@import '_custom/_text';
+@import '_custom/_mixin';
+
+/** //// global styles start */
+html {
+	height: 100%;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: $body-copy;
+	-webkit-font-smoothing: antialiased;
+	font-family: $font-san-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 10px; 
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	   -moz-box-sizing: inherit;
+	   		box-sizing: inherit;
+}
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	&:focus {
+		outline: none;
+	}
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+
+@import '_custom/_common/_index';
+@import '_custom/_elements/_index';
+@import '_custom/_components/_index';
+@import '_custom/_structures/_index';
+
+/** ///////////// - global.scss - end - ///////////// */

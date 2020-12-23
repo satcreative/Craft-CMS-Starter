@@ -1,0 +1,11 @@
+{% import '_macros/_components' as components %}
+
+{% extends '_layouts/_layout-default' %}
+
+{% block main %}
+
+	{{ components.component_builder({
+		entry: entry
+	}) }}
+
+{% endblock %}

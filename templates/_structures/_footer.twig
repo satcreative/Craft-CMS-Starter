@@ -1,0 +1,10 @@
+{% import '_macros/_structures' as structures %}
+
+<footer class="footer">
+	<div class="footer__content">
+		{{ structures.socialLinks() }}
+		<p><a href="/privacy-policy">Privacy policy</a></p>
+		{% set currentYear = now|date('Y') %}
+		<p>&copy; {{ currentYear }}</p>
+	</div>
+</footer>

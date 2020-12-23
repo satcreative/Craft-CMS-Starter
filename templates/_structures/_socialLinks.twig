@@ -1,0 +1,14 @@
+{% if socialMedia is defined %}
+	<div class="socialLinks">
+		{% set socialLinks = socialMedia.socialLinks %}
+		{% if socialLinks | length %}
+			<ul>
+			{% for platform in socialLinks %}
+		        <li>
+		        	<a href="{{ platform.url }}" title="{{ platform.platform }}"><span class="icon-{{ platform.platform }}"></span></a>
+		        </li>
+		    {% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+{% endif %}

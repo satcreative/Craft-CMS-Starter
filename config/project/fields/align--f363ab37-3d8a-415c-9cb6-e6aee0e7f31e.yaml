@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 047dcb9c-3db5-4348-b4b4-26205d72df1a
+handle: align
+instructions: ''
+name: Align
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - left
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Center
+        -
+          - value
+          - center
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

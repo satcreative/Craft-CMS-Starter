@@ -1,0 +1,21 @@
+/** // - imageBlock.scss - start - // */
+.imageBlock {
+	@extend .componentMargin;
+	&__content {
+		@extend .restrict;
+		img {
+			@extend .image;
+		}
+	}
+	&__caption {
+		@extend .p;
+		background: $colour-black;
+		color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	@include bp(med) {
+
+	}
+}
+/** // - imageBlock.scss - end - // */

@@ -1,0 +1,38 @@
+childBlocks: ''
+field: 556a1513-344a-4436-9959-4d98ba8293c3
+fieldLayouts:
+  4d6eab51-78d5-40f9-b535-13411be065d7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a6dae077-21a4-4f15-a929-62030c42b3d4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: f363ab37-3d8a-415c-9cb6-e6aee0e7f31e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Settings
+        sortOrder: 2
+handle: textBlock
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Text block'
+sortOrder: 2
+topLevel: true

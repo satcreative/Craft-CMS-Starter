@@ -1,0 +1,13 @@
+/** ///////////// - topBanner.scss - start - ///////////// */
+.topBanner {
+	@extend .componentMargin;
+	&__content {
+		@extend .restrict;
+		@extend .textContent;
+		text-align: center;
+	}
+	@include bp(med) {
+
+	}
+}
+/** ///////////// - topBanner.scss - end - ///////////// */

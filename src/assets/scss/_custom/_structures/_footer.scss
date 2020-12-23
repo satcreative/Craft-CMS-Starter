@@ -1,0 +1,11 @@
+/** // structures/footer.scss - start */
+.footer {
+	padding: 0 20px;
+	font-size: 1.6rem;
+	&__content {
+		@extend .restrict;
+	}
+	@include bp(med) {
+
+	}
+}

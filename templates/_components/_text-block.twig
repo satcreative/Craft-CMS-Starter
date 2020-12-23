@@ -1,0 +1,14 @@
+{# _components/_text-block.twig #}
+
+{# Parameters #}
+{% set text = params.text ?? null %}
+{% set align = params.align ?? null %}
+
+{# Output #}
+{% if text | length %}
+<section class="textBlock">
+	<div class="textBlock__content textBlock__content--{{ align }}">
+		{{ text }}
+	</div>
+</section>
+{% endif %}
